@@ -19,3 +19,4 @@ if [ $? -eq 0 ]; then
 else
     echo -e "Subject: Error in Backup\n\nBackup failed! Error Code: $?" | sendmail -v $EMAIL | tee -a "$FLOG"
 fi
+
